@@ -1,0 +1,4 @@
+/* Starter stylesheet. Member 1 will build the shared portal theme. */
+:root { --ink: #142b3b; --navy: #102a43; --teal: #0d9488; --gold: #f4b942; }
+body { color: var(--ink); font-family: system-ui, sans-serif; }
+main { min-height: 60vh; padding: 4rem 0; }
