@@ -104,6 +104,258 @@
           ></a>
         </div>
       </section>
+      <section class="section-pad" id="event-information">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-7">
+              <span class="eyebrow">About this event</span>
+              <h2 class="section-title">
+                Turn your ideas into working solutions.
+              </h2>
+              <p class="content-lead">
+                CodeSprint is a sample student coding challenge designed around
+                teamwork, logical thinking and practical problem-solving.
+                Participants work in small teams and present a simple prototype
+                at the end of the session.
+              </p>
+              <p class="body-copy">
+                Students from different departments can take part. You do not
+                need to be an expert programmer to join; bring curiosity, a
+                willingness to learn and a laptop if you have one.
+              </p>
+              <div class="accordion event-accordion mt-4" id="eventAccordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#schedulePanel"
+                      aria-expanded="true"
+                      aria-controls="schedulePanel"
+                    >
+                      Schedule
+                    </button>
+                  </h3>
+                  <div
+                    id="schedulePanel"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#eventAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul class="timeline-list">
+                        <li>
+                          <strong>10:00 AM</strong
+                          ><span>Check-in and team formation</span>
+                        </li>
+                        <li>
+                          <strong>10:30 AM</strong
+                          ><span>Challenge briefing</span>
+                        </li>
+                        <li>
+                          <strong>11:00 AM</strong
+                          ><span>Build session and mentor support</span>
+                        </li>
+                        <li>
+                          <strong>01:00 PM</strong
+                          ><span>Project demos and closing</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#speakersPanel"
+                      aria-expanded="false"
+                      aria-controls="speakersPanel"
+                    >
+                      Speakers &amp; mentors
+                    </button>
+                  </h3>
+                  <div
+                    id="speakersPanel"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#eventAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-0">
+                        Mentor names and profiles will be announced by the
+                        organizing team. The sample portal uses this section to
+                        show where speaker details will appear.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#rulesPanel"
+                      aria-expanded="false"
+                      aria-controls="rulesPanel"
+                    >
+                      Participation rules
+                    </button>
+                  </h3>
+                  <div
+                    id="rulesPanel"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#eventAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul class="mb-0">
+                        <li>Register using your valid university details.</li>
+                        <li>Arrive before the event begins.</li>
+                        <li>Work respectfully with your teammates.</li>
+                        <li>
+                          Use your own work and credit any outside resources.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <aside class="event-info-card">
+                <span class="eyebrow">Event information</span>
+                <h2 class="h4 mt-2 mb-4">Your event at a glance</h2>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-calendar-event" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Date</small
+                    ><strong>Saturday, 21 November 2026</strong>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-clock" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Time</small><strong>10:00 AM – 2:00 PM</strong>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-geo-alt" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Venue</small><strong>Computer Lab, SMIU</strong>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-ticket-perforated" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Registration fee</small
+                    ><strong>Free for students</strong>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-people" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Team size</small><strong>2–4 students</strong>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary btn-lg w-100 mt-4"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quickRegisterModal"
+                >
+                  Register Now
+                  <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i>
+                </button>
+                <p class="small text-muted text-center mt-3 mb-0">
+                  Sample content for academic demonstration.
+                </p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="modal fade"
+        id="quickRegisterModal"
+        tabindex="-1"
+        aria-labelledby="quickRegisterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <span class="eyebrow">Save your spot</span>
+                <h2 class="modal-title h4" id="quickRegisterTitle">
+                  Quick registration
+                </h2>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form data-demo-form>
+              <div class="modal-body">
+                <p class="body-copy">
+                  Enter your details. This front-end demo will show a
+                  confirmation without sending data to a server.
+                </p>
+                <div class="mb-3">
+                  <label for="quickName" class="form-label">Full name</label
+                  ><input
+                    class="form-control"
+                    id="quickName"
+                    name="name"
+                    type="text"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="quickEmail" class="form-label"
+                    >University email</label
+                  ><input
+                    class="form-control"
+                    id="quickEmail"
+                    name="email"
+                    type="email"
+                    placeholder="name@student.smiu.edu.pk"
+                    required
+                  />
+                </div>
+                <input type="hidden" name="event" value="CodeSprint 2026" />
+                <div class="form-feedback" aria-live="polite"></div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel</button
+                ><button type="submit" class="btn btn-primary">
+                  Submit registration
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="portal-footer">
       <div class="container py-5">
