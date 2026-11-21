@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 520" role="img" aria-labelledby="title desc">
+<title id="title">Illustrated campus map placeholder</title><desc id="desc">A simple decorative map with roads, blocks, a green space and a location pin. It is not a real navigation map.</desc>
+<rect width="900" height="520" fill="#e5f2ed"/><path d="M0 95 L900 360 M-30 420 L850 0 M270 0 L520 520 M0 260 L900 190" stroke="#fff" stroke-width="48" fill="none"/><path d="M0 95 L900 360 M-30 420 L850 0 M270 0 L520 520 M0 260 L900 190" stroke="#b7d2c9" stroke-width="3" stroke-dasharray="12 12" fill="none"/>
+<g fill="#c3dcd1"><rect x="55" y="145" width="145" height="75" rx="10"/><rect x="330" y="55" width="130" height="85" rx="10"/><rect x="635" y="315" width="190" height="95" rx="10"/><rect x="90" y="350" width="170" height="90" rx="10"/></g><g fill="#a5cbbd"><rect x="570" y="55" width="180" height="90" rx="12"/><rect x="350" y="350" width="150" height="70" rx="10"/></g>
+<circle cx="465" cy="250" r="58" fill="#0d9488" opacity=".14"/><path d="M465 180c-37 0-67 30-67 67 0 51 67 126 67 126s67-75 67-126c0-37-30-67-67-67z" fill="#0d9488"/><circle cx="465" cy="247" r="23" fill="#fff"/><text x="465" y="450" text-anchor="middle" fill="#28536a" font-family="Arial,sans-serif" font-size="22" font-weight="700">SMIU CAMPUS · ILLUSTRATIVE PLACEHOLDER</text>
+</svg>
