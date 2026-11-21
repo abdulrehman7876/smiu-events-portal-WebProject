@@ -1,16 +1,419 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Event Details | SMIU Events Portal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-dark text-white p-3"><nav class="container" aria-label="Starter navigation"><a class="text-white fw-bold" href="index.html">SMIU Events Portal</a></nav></header>
-  <main class="container"><h1>Event Details</h1><p>The event detail page will be built by Member 2.</p><p>Replace this starter content on your assigned feature branch.</p></main>
-  <footer class="bg-dark text-white p-3"><div class="container">SMIU Events Portal · Academic project</div></footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Read event details and submit a sample registration for CodeSprint 2026."
+    />
+    <meta name="theme-color" content="#102a43" />
+    <title>CodeSprint 2026 | SMIU Events Portal</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark portal-navbar">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="index.html"
+            aria-label="SMIU Events Portal home"
+          >
+            <span class="brand-mark"
+              ><img
+                class="rounded"
+                src="./images/smiuLogo.png"
+                alt="SMIU logo"
+                width="30"
+                height="30"
+            /></span>
+            <span class="brand-copy">SMIU <span>EVENTS PORTAL</span></span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="events.html"
+                  aria-current="page"
+                  >Events</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="societies.html">Societies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item ms-lg-2">
+                <a class="btn btn-nav-cta" href="register.html"
+                  >Join an event
+                  <i class="bi bi-arrow-up-right" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="detail-banner">
+        <img
+          src="images/codefest.svg"
+          alt="Large illustration for the CodeSprint student coding competition"
+        />
+        <div class="detail-banner-shade"></div>
+        <div class="container detail-banner-content">
+          <span class="category-badge">Technology · Featured event</span>
+          <h1 class="display-4 text-white fw-bold mt-3">CodeSprint 2026</h1>
+          <p class="page-hero-copy">
+            One day. Real challenges. Better ideas built together.
+          </p>
+          <a class="btn btn-primary btn-lg mt-2" href="#event-information"
+            >Explore event information
+            <i class="bi bi-arrow-down ms-1" aria-hidden="true"></i
+          ></a>
+        </div>
+      </section>
+      <section class="section-pad" id="event-information">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-7">
+              <span class="eyebrow">About this event</span>
+              <h2 class="section-title">
+                Turn your ideas into working solutions.
+              </h2>
+              <p class="content-lead">
+                CodeSprint is a sample student coding challenge designed around
+                teamwork, logical thinking and practical problem-solving.
+                Participants work in small teams and present a simple prototype
+                at the end of the session.
+              </p>
+              <p class="body-copy">
+                Students from different departments can take part. You do not
+                need to be an expert programmer to join; bring curiosity, a
+                willingness to learn and a laptop if you have one.
+              </p>
+              <div class="accordion event-accordion mt-4" id="eventAccordion">
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#schedulePanel"
+                      aria-expanded="true"
+                      aria-controls="schedulePanel"
+                    >
+                      Schedule
+                    </button>
+                  </h3>
+                  <div
+                    id="schedulePanel"
+                    class="accordion-collapse collapse show"
+                    data-bs-parent="#eventAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul class="timeline-list">
+                        <li>
+                          <strong>10:00 AM</strong
+                          ><span>Check-in and team formation</span>
+                        </li>
+                        <li>
+                          <strong>10:30 AM</strong
+                          ><span>Challenge briefing</span>
+                        </li>
+                        <li>
+                          <strong>11:00 AM</strong
+                          ><span>Build session and mentor support</span>
+                        </li>
+                        <li>
+                          <strong>01:00 PM</strong
+                          ><span>Project demos and closing</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#speakersPanel"
+                      aria-expanded="false"
+                      aria-controls="speakersPanel"
+                    >
+                      Speakers &amp; mentors
+                    </button>
+                  </h3>
+                  <div
+                    id="speakersPanel"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#eventAccordion"
+                  >
+                    <div class="accordion-body">
+                      <p class="mb-0">
+                        Mentor names and profiles will be announced by the
+                        organizing team. The sample portal uses this section to
+                        show where speaker details will appear.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h3 class="accordion-header">
+                    <button
+                      class="accordion-button collapsed"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#rulesPanel"
+                      aria-expanded="false"
+                      aria-controls="rulesPanel"
+                    >
+                      Participation rules
+                    </button>
+                  </h3>
+                  <div
+                    id="rulesPanel"
+                    class="accordion-collapse collapse"
+                    data-bs-parent="#eventAccordion"
+                  >
+                    <div class="accordion-body">
+                      <ul class="mb-0">
+                        <li>Register using your valid university details.</li>
+                        <li>Arrive before the event begins.</li>
+                        <li>Work respectfully with your teammates.</li>
+                        <li>
+                          Use your own work and credit any outside resources.
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5">
+              <aside class="event-info-card">
+                <span class="eyebrow">Event information</span>
+                <h2 class="h4 mt-2 mb-4">Your event at a glance</h2>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-calendar-event" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Date</small
+                    ><strong>Saturday, 21 November 2026</strong>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-clock" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Time</small><strong>10:00 AM – 2:00 PM</strong>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-geo-alt" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Venue</small><strong>Computer Lab, SMIU</strong>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-ticket-perforated" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Registration fee</small
+                    ><strong>Free for students</strong>
+                  </div>
+                </div>
+                <div class="info-row">
+                  <span class="info-icon"
+                    ><i class="bi bi-people" aria-hidden="true"></i
+                  ></span>
+                  <div>
+                    <small>Team size</small><strong>2–4 students</strong>
+                  </div>
+                </div>
+                <button
+                  class="btn btn-primary btn-lg w-100 mt-4"
+                  type="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#quickRegisterModal"
+                >
+                  Register Now
+                  <i class="bi bi-arrow-up-right ms-1" aria-hidden="true"></i>
+                </button>
+                <p class="small text-muted text-center mt-3 mb-0">
+                  Sample content for academic demonstration.
+                </p>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div
+        class="modal fade"
+        id="quickRegisterModal"
+        tabindex="-1"
+        aria-labelledby="quickRegisterTitle"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div>
+                <span class="eyebrow">Save your spot</span>
+                <h2 class="modal-title h4" id="quickRegisterTitle">
+                  Quick registration
+                </h2>
+              </div>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <form data-demo-form>
+              <div class="modal-body">
+                <p class="body-copy">
+                  Enter your details. This front-end demo will show a
+                  confirmation without sending data to a server.
+                </p>
+                <div class="mb-3">
+                  <label for="quickName" class="form-label">Full name</label
+                  ><input
+                    class="form-control"
+                    id="quickName"
+                    name="name"
+                    type="text"
+                    placeholder="Enter your full name"
+                    required
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="quickEmail" class="form-label"
+                    >University email</label
+                  ><input
+                    class="form-control"
+                    id="quickEmail"
+                    name="email"
+                    type="email"
+                    placeholder="name@student.smiu.edu.pk"
+                    required
+                  />
+                </div>
+                <input type="hidden" name="event" value="CodeSprint 2026" />
+                <div class="form-feedback" aria-live="polite"></div>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-outline-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  Cancel</button
+                ><button type="submit" class="btn btn-primary">
+                  Submit registration
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="portal-footer">
+      <div class="container py-5">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <a class="footer-brand" href="index.html"
+              ><span class="brand-mark"
+                ><img
+                  class="rounded"
+                  src="./images/smiuLogo.png"
+                  alt="SMIU logo"
+                  width="30"
+                  height="30"
+              /></span>
+              SMIU Events Portal</a
+            >
+            <p class="footer-copy mt-3 mb-0">
+              A student-focused front-end portal concept for discovering campus
+              events, connecting with societies and taking part in university
+              life.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h2 class="footer-heading">Explore</h2>
+            <a href="events.html">All events</a>
+            <a href="societies.html">Societies</a>
+            <a href="register.html">Registration</a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h2 class="footer-heading">Portal</h2>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="event-details.html">Featured event</a>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="footer-heading">Student Affairs</h2>
+            <p class="footer-copy mb-2">SMIU campus, Karachi, Pakistan</p>
+            <a href="mailto:studentaffairs@smiu.edu.pk"
+              >studentaffairs@smiu.edu.pk</a
+            >
+          </div>
+        </div>
+        <div
+          class="footer-bottom mt-4 pt-4 d-flex flex-column flex-md-row justify-content-between gap-2"
+        >
+          <span
+            >© <span data-current-year>2026</span> SMIU Events Portal — Academic
+            front-end project.</span
+          >
+          <span>Built with Bootstrap 5.3.3</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
