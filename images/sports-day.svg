@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
+<title id="title">SPORTS DAY illustration</title><desc id="desc">Original abstract student event artwork with a bold title, geometric shapes and decorative symbols.</desc>
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#123e43"/><stop offset="1" stop-color="#329b82"/></linearGradient><pattern id="p" width="46" height="46" patternUnits="userSpaceOnUse"><circle cx="4" cy="4" r="2" fill="#fff" opacity=".16"/></pattern></defs>
+<rect width="1200" height="720" fill="url(#g)"/><rect width="1200" height="720" fill="url(#p)"/>
+<circle cx="1020" cy="120" r="205" fill="#f2c14e" opacity=".16"/><circle cx="1075" cy="630" r="250" fill="#fff" opacity=".07"/><path d="M0 560 Q260 400 500 560 T1000 520 T1400 560 V720 H0Z" fill="#071d2a" opacity=".22"/>
+<rect x="730" y="150" width="310" height="350" rx="34" fill="#fff" opacity=".12" transform="rotate(8 885 325)"/><rect x="790" y="205" width="220" height="240" rx="22" fill="#f2c14e" opacity=".26" transform="rotate(8 900 325)"/>
+<text x="105" y="190" fill="#f2c14e" font-family="Arial,sans-serif" font-size="28" font-weight="700" letter-spacing="8">SMIU STUDENT LIFE</text>
+<text x="98" y="370" fill="#fff" font-family="Arial,sans-serif" font-size="118" font-weight="800" letter-spacing="-5">PLAY</text>
+<text x="105" y="445" fill="#fff" opacity=".94" font-family="Arial,sans-serif" font-size="38" font-weight="700">SPORTS DAY</text>
+<text x="840" y="405" fill="#fff" font-family="Arial,sans-serif" font-size="150" font-weight="700" text-anchor="middle">⚡</text>
+<path d="M105 510 H390" stroke="#f2c14e" stroke-width="7" stroke-linecap="round"/><text x="105" y="565" fill="#fff" opacity=".72" font-family="Arial,sans-serif" font-size="22" letter-spacing="4">DISCOVER · CONNECT · TAKE PART</text>
+</svg>

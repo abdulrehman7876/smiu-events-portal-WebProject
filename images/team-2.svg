@@ -1,0 +1,4 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 420" role="img" aria-labelledby="title desc">
+<title id="title">Team member 2 profile placeholder</title><desc id="desc">An original abstract illustrated portrait placeholder to replace with a real group member photo.</desc>
+<rect width="500" height="420" fill="#e5f1ef"/><circle cx="250" cy="160" r="94" fill="#f0c8a7"/><path d="M154 156c-5-85 45-122 103-122 73 0 111 58 93 133-20-37-45-52-92-55-42-2-76 15-104 44z" fill="#213b4b"/><path d="M85 420c10-105 73-160 165-160s155 55 165 160" fill="#366b8a"/><circle cx="215" cy="164" r="8" fill="#233b4b"/><circle cx="285" cy="164" r="8" fill="#233b4b"/><path d="M223 205q27 20 54 0" fill="none" stroke="#a55f55" stroke-width="7" stroke-linecap="round"/><text x="250" y="390" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#fff">MEMBER 2</text>
+</svg>
