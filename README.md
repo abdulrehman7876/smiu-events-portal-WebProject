@@ -38,3 +38,35 @@ A responsive front-end website concept for the SMIU Student Affairs Office. Stud
 ### Home page — desktop screenshot
 
 ![Diagram](images/desktop.png)
+
+### Event Page — phone screenshot
+
+![Diagram](images/event-mobile.jpeg)
+
+### Event Page — desktop screenshot
+
+![Diagram](images/event-desktop.jpeg)
+
+### Societies page — phone screenshot
+
+![Diagram](images/societies-mobile.jpeg)
+
+### Societies page — desktop screenshot
+
+![Diagram](images/societies-desktop.jpeg)
+
+### Register page — phone screenshot
+
+![Diagram](images/register-mobile.jpeg)
+
+### Register page — desktop screenshot
+
+![Diagram](images/register-desktop.jpeg)
+
+### Contact page — phone screenshot
+
+![Diagram](images/contact-mobile.jpeg)
+
+### Contact page — desktop screenshot
+
+![Diagram](images/contact-desktop.jpeg)
