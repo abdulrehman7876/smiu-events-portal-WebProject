@@ -29,6 +29,19 @@ A responsive front-end website concept for the SMIU Student Affairs Office. Stud
 - Original SVG illustrations stored in images/
 - Vanilla JavaScript for demonstration form feedback
 
+## Conflict
+### CSS Styling Conflict
+
+All styles in `style.css` are working as expected. However, a color conflict occurred involving three CSS classes:
+
+- `.navbar-brand`
+- `.brand-mark`
+- `.portal-footer`
+
+Color changes for `.navbar-brand` and `.brand-mark` were declined to maintain the existing styling, while the color change for `.portal-footer` was accepted and retained.
+
+**Status:** Partially resolved — footer color updated; the other two classes retain their previous colors.
+
 ## Responsive testing
 
 ### Home page — phone screenshot
