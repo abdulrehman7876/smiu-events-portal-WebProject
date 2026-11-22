@@ -1,16 +1,458 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Register | SMIU Events Portal</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <link href="css/style.css" rel="stylesheet">
-</head>
-<body>
-  <header class="bg-dark text-white p-3"><nav class="container" aria-label="Starter navigation"><a class="text-white fw-bold" href="index.html">SMIU Events Portal</a></nav></header>
-  <main class="container"><h1>Register</h1><p>The registration form will be built by Member 3.</p><p>Replace this starter content on your assigned feature branch.</p></main>
-  <footer class="bg-dark text-white p-3"><div class="container">SMIU Events Portal · Academic project</div></footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Register your interest in an SMIU campus event using the sample student registration form."
+    />
+    <meta name="theme-color" content="#102a43" />
+    <title>Student registration | SMIU Events Portal</title>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark portal-navbar">
+        <div class="container">
+          <a
+            class="navbar-brand d-flex align-items-center gap-2"
+            href="index.html"
+            aria-label="SMIU Events Portal home"
+          >
+            <span class="brand-mark"
+              ><img
+                class="rounded"
+                src="./images/smiuLogo.png"
+                alt="SMIU logo"
+                width="30"
+                height="30"
+            /></span>
+            <span class="brand-copy">SMIU <span>EVENTS PORTAL</span></span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNavigation"
+            aria-controls="mainNavigation"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNavigation">
+            <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="events.html">Events</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="societies.html">Societies</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="register.html"
+                  aria-current="page"
+                  >Register</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item ms-lg-2">
+                <a class="btn btn-nav-cta" href="register.html"
+                  >Join an event
+                  <i class="bi bi-arrow-up-right" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="page-hero page-hero-register">
+        <div class="container">
+          <span class="eyebrow eyebrow-light">Take the next step</span>
+          <h1 class="display-4 fw-bold text-white mt-2">
+            Make your registration count.
+          </h1>
+          <p class="page-hero-copy">
+            Complete the form below to register your interest in a campus event.
+          </p>
+        </div>
+      </section>
+      <section class="section-pad">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+              <div class="form-shell">
+                <div class="form-shell-heading">
+                  <span class="eyebrow"
+                    >Student affairs · Event registration</span
+                  >
+                  <h2 class="h3 mt-2">Student information</h2>
+                  <p class="body-copy mb-0">
+                    Fields marked as required must be completed. This front-end
+                    project does not store or submit your information to a
+                    server.
+                  </p>
+                </div>
+                <form class="p-4 p-lg-5" data-demo-form>
+                  <div class="row g-4">
+                    <div class="col-md-6">
+                      <label for="fullName" class="form-label"
+                        >Full name <span class="required-mark">*</span></label
+                      ><input
+                        type="text"
+                        class="form-control"
+                        id="fullName"
+                        name="fullName"
+                        placeholder="e.g. Abdul Rehman"
+                        autocomplete="name"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="rollNumber" class="form-label"
+                        >Roll number <span class="required-mark">*</span></label
+                      ><input
+                        type="text"
+                        class="form-control"
+                        id="rollNumber"
+                        name="rollNumber"
+                        placeholder="e.g. BSE-24S-077"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="studentEmail" class="form-label"
+                        >University email
+                        <span class="required-mark">*</span></label
+                      ><input
+                        type="email"
+                        class="form-control"
+                        id="studentEmail"
+                        name="email"
+                        placeholder="name@student.smiu.edu.pk"
+                        autocomplete="email"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="phoneNumber" class="form-label"
+                        >Phone number
+                        <span class="required-mark">*</span></label
+                      ><input
+                        type="tel"
+                        class="form-control"
+                        id="phoneNumber"
+                        name="phone"
+                        placeholder="03XX-XXXXXXX"
+                        pattern="[0-9+() -]{7,20}"
+                        autocomplete="tel"
+                        required
+                      />
+                    </div>
+                    <div class="col-md-6">
+                      <label for="department" class="form-label"
+                        >Department <span class="required-mark">*</span></label
+                      ><select
+                        class="form-select"
+                        id="department"
+                        name="department"
+                        required
+                      >
+                        <option value="" selected disabled>
+                          Select your department
+                        </option>
+                        <option>Software Engineering</option>
+                        <option>Computer Science</option>
+                        <option>Business Administration</option>
+                        <option>Media Studies</option>
+                        <option>Artificial Intelligence</option>
+                        <option>Other</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="eventChoice" class="form-label"
+                        >Event <span class="required-mark">*</span></label
+                      ><select
+                        class="form-select"
+                        id="eventChoice"
+                        name="event"
+                        required
+                      >
+                        <option value="" selected disabled>
+                          Choose an event
+                        </option>
+                        <option>CodeSprint 2026</option>
+                        <option>Voices of SMIU</option>
+                        <option>Future Forward</option>
+                        <option>Design Jam</option>
+                        <option>Campus Sports Day</option>
+                        <option>Frames of Karachi</option>
+                        <option>Green Campus Drive</option>
+                        <option>Culture &amp; Connections</option>
+                      </select>
+                    </div>
+                    <fieldset class="col-12">
+                      <legend class="form-label mb-2">
+                        Study year <span class="required-mark">*</span>
+                      </legend>
+                      <div class="d-flex flex-wrap gap-3">
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="studyYear"
+                            id="year1"
+                            value="1st year"
+                            required
+                          /><label class="form-check-label" for="year1"
+                            >1st year</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="studyYear"
+                            id="year2"
+                            value="2nd year"
+                          /><label class="form-check-label" for="year2"
+                            >2nd year</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="studyYear"
+                            id="year3"
+                            value="3rd year"
+                          /><label class="form-check-label" for="year3"
+                            >3rd year</label
+                          >
+                        </div>
+                        <div class="form-check">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="studyYear"
+                            id="year4"
+                            value="4th year"
+                          /><label class="form-check-label" for="year4"
+                            >4th year</label
+                          >
+                        </div>
+                      </div>
+                    </fieldset>
+                    <fieldset class="col-12">
+                      <legend class="form-label mb-2">Interests</legend>
+                      <div class="row g-2">
+                        <div class="col-6 col-md-4">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="interestTech"
+                              name="interests"
+                              value="Technology"
+                            /><label class="form-check-label" for="interestTech"
+                              >Technology</label
+                            >
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="interestArts"
+                              name="interests"
+                              value="Arts"
+                            /><label class="form-check-label" for="interestArts"
+                              >Arts &amp; design</label
+                            >
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="interestSports"
+                              name="interests"
+                              value="Sports"
+                            /><label
+                              class="form-check-label"
+                              for="interestSports"
+                              >Sports</label
+                            >
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="interestCulture"
+                              name="interests"
+                              value="Culture"
+                            /><label
+                              class="form-check-label"
+                              for="interestCulture"
+                              >Culture</label
+                            >
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="interestVolunteering"
+                              name="interests"
+                              value="Volunteering"
+                            /><label
+                              class="form-check-label"
+                              for="interestVolunteering"
+                              >Volunteering</label
+                            >
+                          </div>
+                        </div>
+                        <div class="col-6 col-md-4">
+                          <div class="form-check">
+                            <input
+                              class="form-check-input"
+                              type="checkbox"
+                              id="interestCareer"
+                              name="interests"
+                              value="Career"
+                            /><label
+                              class="form-check-label"
+                              for="interestCareer"
+                              >Career development</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                    <div class="col-12">
+                      <label for="studentMessage" class="form-label"
+                        >Message
+                        <span class="text-muted fw-normal"
+                          >(optional)</span
+                        ></label
+                      ><textarea
+                        class="form-control"
+                        id="studentMessage"
+                        name="message"
+                        rows="4"
+                        placeholder="Tell the organizers about any questions or requirements..."
+                      ></textarea>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input"
+                          type="checkbox"
+                          id="termsAccepted"
+                          name="terms"
+                          required
+                        /><label class="form-check-label" for="termsAccepted"
+                          >I confirm that the information provided is correct
+                          and agree to be contacted about this event.
+                          <span class="required-mark">*</span></label
+                        >
+                      </div>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-feedback" aria-live="polite"></div>
+                      <button type="submit" class="btn btn-primary btn-lg">
+                        Submit registration
+                        <i
+                          class="bi bi-arrow-up-right ms-1"
+                          aria-hidden="true"
+                        ></i>
+                      </button>
+                      <p class="small text-muted mt-3 mb-0">
+                        Demo only: form submissions are not saved or emailed.
+                      </p>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="portal-footer">
+      <div class="container py-5">
+        <div class="row g-4 align-items-start">
+          <div class="col-lg-5">
+            <a class="footer-brand" href="index.html"
+              ><span class="brand-mark">S</span> SMIU Events Portal</a
+            >
+            <p class="footer-copy mt-3 mb-0">
+              A student-focused front-end portal concept for discovering campus
+              events, connecting with societies and taking part in university
+              life.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h2 class="footer-heading">Explore</h2>
+            <a href="events.html">All events</a>
+            <a href="societies.html">Societies</a>
+            <a href="register.html">Registration</a>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h2 class="footer-heading">Portal</h2>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="event-details.html">Featured event</a>
+          </div>
+          <div class="col-lg-3">
+            <h2 class="footer-heading">Student Affairs</h2>
+            <p class="footer-copy mb-2">SMIU campus, Karachi, Pakistan</p>
+            <a href="mailto:studentaffairs@smiu.edu.pk"
+              >studentaffairs@smiu.edu.pk</a
+            >
+          </div>
+        </div>
+        <div
+          class="footer-bottom mt-4 pt-4 d-flex flex-column flex-md-row justify-content-between gap-2"
+        >
+          <span
+            >© <span data-current-year>2026</span> SMIU Events Portal — Academic
+            front-end project.</span
+          >
+          <span>Built with Bootstrap 5.3.3</span>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
